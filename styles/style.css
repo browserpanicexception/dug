@@ -1,0 +1,167 @@
+/* ===GLOBAL SETTINGS ===*/
+* {
+	margin: 0;
+}
+
+html {
+	background-image: url(../images/grainbackground.png);
+}
+
+body {
+	margin: 0;
+	font-family: "Trebuchet", Verdana, Tahoma, Lucida Sans, Arial, sans-serif;
+	color: #000000;
+	border-top: 5px solid #0f0f0e;
+	min-height: calc(100% - 285px);
+}
+
+p {
+	font-size: 11pt;
+}
+
+a:link {
+	color: #27408B;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #a9a9a9;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* === LAYOUT === */
+.banner {
+	height: auto;
+	margin-right: 7%;
+}
+
+.main {
+	position: relative;
+}
+
+.inner{
+	background-image: url(../images/background.png);
+}
+
+.footer {
+	min-height: 100px;
+	max-height: auto;
+	background: #0f0f0e;
+	position: inherit;
+	text-align: center;
+	width: 100%;
+}
+
+.footer p {
+	color: #ffffff;
+}
+
+/* === TOP NAVIGATION MENU === */
+.nav {
+	position: relative;
+	text-align: right;
+	width: 100%;
+}
+
+.nav, .home, .comm, .factions, .admin, .user, .about {
+	background-image: url(../images/grainbackground.png);
+}
+
+.nav ul {
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	text-align: center;
+}
+
+.nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.nav ul li {
+	float: left;
+
+}
+
+.nav ul li:hover {
+	background: #0f0f0e;
+}
+
+.nav ul li:hover a {
+	color: #d7d7d7;
+}
+
+.nav ul li a {
+	display: block; padding: 20px 15px;
+	color: #0f0f0e;
+	text-decoration: none;
+}
+
+.nav ul ul {
+	display: none;
+	background: #0f0f0e;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+}
+
+.nav ul ul li {
+	float: none;
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+.nav ul ul li a {
+	padding: 10px 20px;
+	color: #d7d7d7;
+}
+
+.nav ul ul li a:hover {
+	background: #0f0f0e;
+}
+
+.nav ul li:hover > ul {
+	display: block;
+}
+
+/* === RESPONSIVE MEDIA MUST STAY 2ND TO LAST === */
+@media (max-width: 767px) {
+
+	.main, .sidebar {
+		width: auto;
+		float: none;
+		padding: 1%;
+	}
+
+} /* ending bracket for 767px query */
+
+/* === PRINT MUST BE LAST === */
+
+@media print {
+
+	*{
+		color: #000 !important;
+	}
+
+	.banner, nav, .sidebar, .site-footer {
+		display: none;
+	}
+
+	body {
+		background: #fff;
+		font-size: 11pt;
+	}
+
+	.wrapper, .main, .sidebar {
+		border: none;
+		float: none;
+		width: auto;
+	}
+}
