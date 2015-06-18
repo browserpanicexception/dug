@@ -16,29 +16,37 @@
 
 	<body>
 
-		<header class="banner" role="banner">
-			<img class="logo" src="images/logo.png" alt="">
-			<?php include ('includes/menu.php');?>
-		</header>
+		<div class="container">
+
+			<header class="banner" role="banner">
+
+				<img src="images/logo.png" alt="" class="logo">
+
+				<div class="menu">
+					<?php include ('includes/menu.php');?>
+				</div>
+				
+			</header>
+
+			<div class="videowrap">
+
+				<div class="video-container">
+
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SE8I8XREIFQ" allowfullscreen></iframe>
+
+				</div>
+
+			</div>
 
 		<div class="main" role="main">
-				
-			<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL5u88O7gU_0h8hsOS2lmN521qAcl5gI1Z" frameborder="0" allowfullscreen></iframe>
 
-				<!-- possibly JS here for countdown timer -->
+		</div> <!-- End Main -->
 
-				<!-- embeded youtube video -->
-		</div>
+		<div class="clearfooter"></div>
 
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+	</div> <!-- End Container -->
 
 		<footer class="footer" role="contentinfo">
-			<p>Hello World!</p>
 		</footer>
 
 	</body>
