@@ -6,6 +6,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Splitting content out into header and footer templates for greater portability.
 
-## [0.0.1] - 2015-06-19
+## [0.0.1-alpha] - 2015-06-19
 ### Added
 - Initial static version. HTML 5 compliant with full validation at validator.w3.org
